@@ -16,6 +16,20 @@ const pixabay = async (searchTerm, page, pageItems = 15) => {
     page: page,
   };
 
+  /*
+
+    const queryString = new URLSearchParams(queryParams).toString();
+    console.log('queryParams:', queryParams);
+    const url = `${baseUrl}?${queryString}`;
+    const options = {
+      method: 'GET',
+    };
+    axios.defaults.baseURL = 'https://pixabay.com';
+    //axios.defaults.baseURL = 'https://pixabay.com/api/';
+    const response = axios.get(`/api/?${queryString}`);
+    return response;
+  */
+
   try {
     const url = baseUrl;
     const config = { params: queryParams };

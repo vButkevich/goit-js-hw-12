@@ -1,6 +1,8 @@
 'use strict';
-import * as izi from './js/iziToastHelper';
+console.log('main:v.2024.03.24.009');
+
 import renderData from './js/render-functions';
+import * as izi from './js/iziToastHelper';
 import pixabay from './js/pixabay-api';
 
 let page = 1;
@@ -30,7 +32,8 @@ searchForm.addEventListener('submit', async e => {
     return izi.showError('Please enter a search term.');
   }
 
-  await getImages(1);
+  page = 1;
+  await getImages(page);
 });
 
 loadMoreBtn.addEventListener('click', async () => {
@@ -40,6 +43,7 @@ loadMoreBtn.addEventListener('click', async () => {
 
 async function getImages(page) {
   showLoadingIndicator();
+  console.log('page:', page);
 
   try {
     const pageItems = 15;
