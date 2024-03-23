@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script src="./main.js" type="module"></script>
+
+    <title>[hw:goit-js-hw-12]</title>
+  </head>
+  <body>
+    <!-- v.2023-03-23.0011 -->
+
+    <div class="container">
+      <form id="searchForm">
+        <div>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Search images..."
+            name="q"
+          />
+          <button type="submit" id="submit">Search</button>
+        </div>
+      </form>
+
+      <div id="gallery"></div>
+
+      <div>
+        <div
+          id="loading-indicator"
+          class="loading-indicator"
+          style="display: none"
+        >
+          Loading images, please wait...
+        </div>
+        <button id="load-more-btn" style="display: none">Load more</button>
+      </div>
+    </div>
+  </body>
+</html>
