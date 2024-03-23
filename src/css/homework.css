@@ -1,4 +1,5 @@
 :root {
+  --items: 3;
   --width: 240px;
   --font-family: 'Montserrat', sans-serif;
 }
@@ -80,7 +81,7 @@ button:focus {
 #gallery,
 .gallery,
 .gallery-list {
-  --items: 3;
+  --items: 5;
   --column-gap: 24px;
   display: flex;
   flex-wrap: wrap;
@@ -93,8 +94,8 @@ button:focus {
 .gallery-item {
   position: relative;
   width: calc((100% - var(--column-gap) * (var(--items) - 1)) / var(--items));
-  width: 360px;
-  height: 240px;
+  /* width: 360px; */
+  /* height: 240px; */
 
   display: flex;
   flex-direction: column;
