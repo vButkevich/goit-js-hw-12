@@ -4,7 +4,7 @@ console.log('renderData:v.2.03');
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-var lightbox = new SimpleLightbox('.gallery a', {
+var lightbox = new SimpleLightbox('.gallery-list a', {
   // captionPosition: 'bottom',
   captionsData: 'alt',
   captionDelay: 250,
